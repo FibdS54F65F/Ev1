@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Territits.io</title>
+        <meta name="description" content="Emma.io - The Art of Nude Conquest">
+        <meta name="keywords" content="territorial.io, territorial, territorial game, conquest game, conquer game, territory game, emma.io, polarmod, Territits">
+        <meta name="author" content="Emma">
+        <meta name="viewport" content="width=device-width, maximum-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+       <div> 
+            <div id="hoveroverlay" class="hoveroverlay">
+                <p id="coordinatesDisplay"></p> 
+            </div>
+
+            <div class="clanleaderboard" id="clanleaderboard" style="display: none;">
+                <h2 style="font-size: x-large;"> Clan Leaderboard</h2>
+                <button onclick="closeclanleaderboard()" style="background-image: url(Picsandvids/CLOSE.png);width:100px;height: 100px; border-color: rgba(0,255,0,1);"></button>
+                <ul id="rankedList">
+                </ul>
+            </div>
+            <div class="listofplayer" id="listofplayer" style="display: none;">
+                <h2 style="font-size: x-large;"> Playerlist</h2>
+                <button onclick="closelistofplayer()" style="background-image: url(Picsandvids/CLOSE.png);width:100px;height: 100px; border-color: rgba(0,255,0,1);"></button>
+                <ul id="playerList">
+                </ul>
+            </div>
+            <div class = "divlogTable" id="divlogTable" style="display: none;">
+                <table id="logTable" >
+                    <button onclick="closetable()" style="background-image: url(Picsandvids/CLOSE.png);width:100px;height: 100px; border-color: rgba(0,255,0,1);"></button>
+                    <thead> 
+                        <tr>
+                            <th>Timestamp</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+            <div class = "porn" id= "porn" style="display: none;">
+                <video autoplay muted loop >
+                    <source src="Picsandvids/Luna_Okko2.mp4" type="video/mp4">
+                    <!--<source src="Picsandvids/Luna_Okko2.mp4" type="video/mp4">-->
+
+                </video>
+            </div>
+
+            <div class="overlay" id="overlay" style="display: none;">
+                <!-- <h3>Settings (press S to close or open)</h3>-->
+                <div>
+                <!-- <p> Functions</p> -->
+                    <input type="checkbox" id="checkbox2" class="custom-checkbox-2">
+                    <label for="checkbox2"></label>
+                    <button onclick="openbotsettings()" style="background-image: url(Picsandvids/Settings.png);width:50px;height: 50px; border-color: rgba(0,255,0,1);position: fixed;"></button>
+                    <input type="checkbox" id="checkbox3" class="custom-checkbox-3"> 
+                    <label for="checkbox3"></label><br>
+                    <input type="checkbox" id="checkbox1" class="custom-checkbox-1"> 
+                    <label for="checkbox1"></label> 
+
+                    <input type="checkbox" id="checkbox4" class="custom-checkbox-4">
+                    <label for="checkbox4"></label><br>
+                    <button onclick="openclanleaderboard()" style="background-image: url(Picsandvids/CLAN.png);width:100px;height: 100px; border-color: rgba(0,255,0,1);"></button>
+                    <button onclick="openlistofplayer()" style="background-image: url(Picsandvids/PL.png);width:100px;height: 100px; border-color: rgba(0,255,0,1);margin-left: 155px;"></button>
+                    <button onclick="openporn()" style="background-image: url(Picsandvids/OpenPorn.png);width:100px;height: 100px;  ;border: 5px solid rgba(255,163,26,1);border-radius: 50px;"></button>
+                    <button onclick="closeporn()" style="background-image: url(Picsandvids/ClosePorn.png);width:100px;height: 100px; border: 5px solid rgba(255,163,26,1);border-radius: 50px; margin-left: 155px;"></button>
+                    
+                    <label><input type="checkbox" id="checkboxseedspawnpick">Choose seedspawn on?</label><br>
+                    <label><input type="text" id="inputFieldseedspawn" value="0">seedspawn</label><br>
+                    </div>
+            <!--  <p> Keybinds</p>  -->
+                    
+                <label>E-Key:<input type="text" id="inputFieldE" value="29.2"></label>
+                <label>R-key:<input type="text" id="inputFieldR" value="37.5"></label><br>
+                <label>T-key:<input type="text" id="inputFieldT" value="35.1"></label>
+                <label>U-key:<input type="text" id="inputFieldU" value="34.7"></label><br>
+                <label>I-key:<input type="text" id="inputFieldI" value="44.3"></label>
+                <label>N-key:<input type="text" id="inputFieldN" value="20.9"></label><br>
+                <label>X-key:<input type="text" id="inputFieldX" value="15"></label>
+                <label>C-key:<input type="text" id="inputFieldC" value="7"></label><br>
+            <!-- <p>Ghostmode</p>  -->
+                <label><input type="checkbox" id="checkboxghostmode"> Ghostmode</label><br>
+                <label><input type="text" id="Ghostmodetroops" value="10000">Troops</label><br>
+            <!---         <label><input type="text" id="Ghostmoderedinterest" value="1000">Red interest (x times land)</label><br>     --->
+                <label><input type="text" id="Ghostmodecap" value="1500">Cap at (x times land)</label><br>
+                <button onclick="savechange()" style="background-image: url(Picsandvids/SAVE.png);width:100px;height: 100px; border-color: rgba(0,255,0,1);margin-top: 10px;"></button>
+                <button onclick="closeOverlay()" style="background-image: url(Picsandvids/CLOSE.png);width:100px;height: 100px; border-color: rgba(0,255,0,1);margin-top: 10px;margin-left: 155px;"></button>
+
+
+            </div>
+
+            <div class="overlay" id="botsettings" style="display: none;">
+                <h2> Settings for bot </h2>
+
+                <label><input type="text2" id="inputFieldmintroopsme" value="1000">Minimum troops</label><br>
+                <label><input type="text2" id="inputFieldminsizebot" value="0">minimum size</label><br>
+                <label><input type="text2" id="inputFieldminsizeborderbot" value="0">minimum border</label><br>
+                <label><input type="text2" id="inputFieldmaxdensitybot" value="0.7">maximum density</label><br>
+                <label><input type="text2" id="inputFieldtroopsattack" value="1900">troops/attack</label><br>
+                <label><input type="text2" id="inputFieldattackfreq" value="100">interval</label><br>
+                <label><input type="text2" id="inputFieldrefreshrate" value="10">rating refresrate</label><br>
+                
+                <button onclick="closebotsettings()" style="background-image: url(Picsandvids/CLOSE.png);width:100px;height: 100px; border-color: rgba(0,255,0,1);"></button>
+                <button onclick="savebotsettingschange()" style="background-image: url(Picsandvids/SAVE.png);width:100px;height: 100px; border-color: rgba(0,255,0,1);"></button>
+                
+                <h3> List of 137's u did:</h3>
+            
+                <ul id = '137list'>
+                </ul>
+                
+            </div>
+            <div class="copilot" style="display: none;">
+
+            </div>
+            <div id="passwordModal" class="modal">
+                <div class="modal-content">
+                    <h2>Enter Password</h2>
+                    <input type="password" id="passwordInput" placeholder="Password">
+                    <div id="errorMessage" class="error">Wrong password</div>
+                    <button onclick="checkPassword()">Submit</button>
+                    <button onclick="skipPassword()">Skip</button>
+                </div>
+            </div>
+       </div>
+        <canvas id="canvasA" width="128" height="128"></canvas>
+        
+        <script src="mod.js">
+
+        </script>
+        
+     <!--   <script>
+            setTimeout(function() {
+                var script1 = document.createElement('script');
+                script1.src = 'mod.js';
+                document.head.appendChild(script1);
+                var script2 = document.createElement('script');
+                script2.src = 'game.js';
+                document.head.appendChild(script2);
+            }, 1000);
+          
+      //      setTimeout(function() {
+        //      var script2 = document.createElement('script');
+          //    script2.src = 'mod2.js';
+            //  document.head.appendChild(script2);
+            //}, 6000); // Load the second script after 6 seconds
+          </script>
+
+        -->
+
+
+    </body>
+</html>
