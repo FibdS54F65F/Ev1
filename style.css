@@ -1,0 +1,313 @@
+html, body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-image: url(Picsandvids/OriginalEmma.png);
+    background-size: 140%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    color: rgb(255,255,255)
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: rgb(225, 225, 255);
+}
+.copilot {
+    display: inline-block;
+    width: 100px; /* width of your background image */
+    height: 100px; /* height of your background image */
+    background-image: url(Picsandvids/ROBOTWOMAN.png);
+    background-size: cover;
+
+}
+.custom-checkbox-1 {
+    display: none; /* hide the default checkbox */
+}
+
+.custom-checkbox-1 + label {
+    display: inline-block;
+    width: 100px; /* width of your background image */
+    height: 100px; /* height of your background image */
+    background-image: url(Picsandvids/NODENSMOD.png);
+    background-size: cover; /* or contain, depending on your image size */
+    border: 2px solid blue;
+    border-radius: 25px;
+
+}
+
+.custom-checkbox-1:checked + label {
+    display: inline-block;
+    width: 100px; /* width of your background image */
+    height: 100px; /* height of your background image */
+    background-image: url(Picsandvids/DENSMOD.png);
+    background-size: cover; /* or contain, depending on your image size */
+
+    /* style for when checkbox is checked */
+    /* You can change the background image when the checkbox is checked if desired */
+}
+.custom-checkbox-2 {
+    display: none; /* hide the default checkbox */
+}
+
+.custom-checkbox-2 + label {
+    display: inline-block;
+    width: 100px; /* width of your background image */
+    height: 100px; /* height of your background image */
+    background-image: url(Picsandvids/NOROBOTWOMAN.png);
+    background-size: cover; /* or contain, depending on your image size */
+    border: 2px solid rgba(255,0,0,1);
+
+}
+
+.custom-checkbox-2:checked + label {
+    display: inline-block;
+    width: 100px; /* width of your background image */
+    height: 100px; /* height of your background image */
+    background-image: url(Picsandvids/ROBOTWOMAN.png);
+    background-size: cover; /* or contain, depending on your image size */
+    /* style for when checkbox is checked */
+    /* You can change the background image when the checkbox is checked if desired */
+}
+.custom-checkbox-3 {
+    display: none; /* hide the default checkbox */
+}
+
+.custom-checkbox-3 + label {
+    display: inline-block;
+    width: 100px; /* width of your background image */
+    height: 100px; /* height of your background image */
+    background-image: url(Picsandvids/noautodonate.png);
+    background-size: cover; /* or contain, depending on your image size */
+    border: 2px solid rgba(255,0,0,1);
+    margin-left: 155px
+
+
+}
+
+.custom-checkbox-3:checked + label {
+    display: inline-block;
+    width: 100px; /* width of your background image */
+    height: 100px; /* height of your background image */
+    background-image: url(Picsandvids/autodonate.png);
+    background-size: cover; /* or contain, depending on your image size */
+    /* style for when checkbox is checked */
+    /* You can change the background image when the checkbox is checked if desired */
+}
+.custom-checkbox-4 {
+    display: none; /* hide the default checkbox */
+}
+
+.custom-checkbox-4 + label {
+    display: inline-block;
+    width: 100px; /* width of your background image */
+    height: 100px; /* height of your background image */
+    border: 2px solid blue;
+    border-radius: 25px;
+    background-image: url(Picsandvids/Nocorgi_blue.png);
+    background-size: cover; /* or contain, depending on your image size */
+    margin-left: 155px;
+
+}
+
+.custom-checkbox-4:checked + label {
+    display: inline-block;
+    width: 100px; /* width of your background image */
+    height: 100px; /* height of your background image */
+    background-image: url(Picsandvids/corgi_blue.jpg);
+    background-size: cover; 
+    
+    /* or contain, depending on your image size */
+    /* style for when checkbox is checked */
+    /* You can change the background image when the checkbox is checked if desired */
+}
+
+.overlay {
+    color: rgba(255,0,0,1);
+    background-color:rgba(0,0,0,1);
+    font-size: large;
+    font-family: sans-serif;
+    font-weight:bolder;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-image: url(Picsandvids/blue2.png);
+    width:376px;
+    height: 768px;
+     /*background-color: rgba(0, 0, 0, 1);*/
+    padding: 5px;
+    border: 1px solid rgba(255,0,0,1);
+    z-index: 9998;
+}
+
+
+
+.hoveroverlay {
+
+    display: block;
+    position: fixed;
+    bottom: 70%;
+    font-weight: bold;
+    font-size: 18px ;
+    padding: 0px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;                
+}
+
+.listofplayer {
+    color: rgba(255,255,255,1);
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: sans-serif;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 500px;
+    height: 768px;
+    background-image: url(Picsandvids/playerlist.png);
+    /*background-color: rgba(0, 0, 0, 1);*/
+    padding: 10px;
+    border: 1px solid rgba(0,255,255,1);
+    z-index: 9999;
+
+    #playerList {
+    max-height: 500px; /* Adjust the maximum height as needed */
+    overflow-y: auto; /* Enable vertical scrollbar */
+    }
+}
+.divlogTable{
+    color: rgba(255,255,255,1);
+    font-size: large;
+    font-weight: bolder;
+    font-family: sans-serif;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    top: 10px;
+    right: 10px;
+    width: 500px;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0,255,255,1);
+    z-index: 99999;
+
+
+
+}
+
+#divlogTable{
+        max-height: 800px;
+        overflow-y: auto;
+    }
+
+table {
+border-collapse: collapse;
+width: 100%;
+z-index: 9999;
+
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.clanleaderboard {
+    color: rgba(255,255,255,1);
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: sans-serif;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 500px;
+    height: 450px;
+    background-image: url(Picsandvids/red.png);
+    /*background-color: rgba(0, 0, 0, 1);*/
+    padding: 10px;
+    border: 1px solid rgba(0,255,255,1);
+    z-index: 9999;
+
+                /* Add CSS for scrollbar */
+    #rankedList {
+        max-height: 200px; /* Adjust the maximum height as needed */
+        overflow-y: auto; /* Enable vertical scrollbar */
+        }
+    }
+    #botsettings{
+        background-image: url(Picsandvids/sunglasses.png);
+        left: 386px;
+        width: 386px;
+        color: rgba(0,255,0,1);
+        border: 1px solid rgba(0,255,0,1);
+    }f
+    input[type="text"] {
+    color: rgba(255,0,0,1); /* Text color */
+    background-color: rgba(0,0,0,0.5);/*rgba(0,0,0,1); /* Background color */
+    border: 1px solid rgba(255,0,0,1); /* Border color */
+    padding: 5px; /* Padding */
+    border-radius: 5px; /* Border radius */
+    width: 50px; /* Width */
+    z-index: 9999;
+    }     
+    input[type="text2"] {
+        color: rgba(0,255,0,1); /* Text color */
+        background-color: rgba(0,0,0,0.5);/*rgba(0,0,0,1); /* Background color */
+        border: 1px solid rgba(0,255,0,1); /* Border color */
+        padding: 5px; /* Padding */
+        border-radius: 5px; /* Border radius */
+        width: 50px; /* Width */
+        z-index: 9999;
+    }        
+    .welcome-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+        /* password protect */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .modal-content input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .modal-content button {
+            padding: 10px 20px;
+        }
+
+        .error {
+            color: red;
+            display: none;
+        }
