@@ -1,46 +1,4 @@
 
-            
-//0// porn vid
-let porn = document.getElementById('porn');
-function openporn(){
-    porn.style.display = 'block'
-}
-function closeporn(){
-    porn.style.display = 'none'
-}
-let offsetX, offsetY;
-
-porn.addEventListener('mousedown', startDragging);
-
-
-function startDragging(event) {
-    // Calculate the offset between mouse position and the top-left corner of the draggable element
-    offsetX = event.clientX - porn.getBoundingClientRect().left;
-    offsetY = event.clientY - porn.getBoundingClientRect().top;
-
-    // Add event listeners to handle dragging and dropping
-    document.addEventListener('mousemove', drag);
-    document.addEventListener('mouseup', stopDragging);
-}
-
-function drag(event) {
-    // Calculate the new position of the draggable element
-    const posX = event.clientX - offsetX;
-    const posY = event.clientY - offsetY;
-
-    // Apply the new position
-    porn.style.left = `${posX}px`;
-    porn.style.top = `${posY}px`;
-}
-
-function stopDragging() {
-    // Remove event listeners when dragging stops
-    document.removeEventListener('mousemove', drag);
-    document.removeEventListener('mouseup', stopDragging);
-}
-
-
-
 
 //1// Code so time-out works            
 var closeOverlayFunc;
